@@ -13,7 +13,7 @@ const walletRouter = require('./routes/walletRoutes');
 const transactionRouter = require('./routes/transactionRoutes');
 const creditCardRouter = require('./routes/creditCardRoutes');
 const smartCardRouter = require('./routes/smartCardRoutes');
-const notificationRouter = require('./routes/notificationRoutes');
+// const notificationRouter = require('./routes/notificationRoutes');
 
 const app = express();
 
@@ -42,7 +42,7 @@ app.use('/api/v1/wallets', walletRouter);
 app.use('/api/v1/transactions', transactionRouter);
 app.use('/api/v1/creditCards', creditCardRouter);
 app.use('/api/v1/smartCards', smartCardRouter);
-app.use('/api/v1/notifications', notificationRouter);
+// app.use('/api/v1/notifications', notificationRouter);
 
 app.get('/', (req, res) => {
   res.status(200).send('Hello form server side!');
